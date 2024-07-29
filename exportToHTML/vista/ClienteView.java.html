@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>ClienteView.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ClienteView.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">vista</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.*;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.*;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.</span><span class="s1">event</span><span class="s2">.</span><span class="s1">ActionListener</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">ClienteView </span><span class="s0">extends </span><span class="s1">JFrame </span><span class="s2">{</span>
+    <span class="s0">private </span><span class="s1">JTextField cargoField </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JTextField</span><span class="s2">(</span><span class="s3">20</span><span class="s2">);</span>
+    <span class="s0">private </span><span class="s1">JButton buscarButton </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JButton</span><span class="s2">(</span><span class="s4">&quot;Buscar&quot;</span><span class="s2">);</span>
+    <span class="s0">private </span><span class="s1">JTextArea resultArea </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JTextArea</span><span class="s2">(</span><span class="s3">10</span><span class="s2">, </span><span class="s3">30</span><span class="s2">);</span>
+
+    <span class="s0">public </span><span class="s1">ClienteView</span><span class="s2">() {</span>
+        <span class="s1">setTitle</span><span class="s2">(</span><span class="s4">&quot;Consulta de Clientes&quot;</span><span class="s2">);</span>
+        <span class="s1">setSize</span><span class="s2">(</span><span class="s3">400</span><span class="s2">, </span><span class="s3">300</span><span class="s2">);</span>
+        <span class="s1">setDefaultCloseOperation</span><span class="s2">(</span><span class="s1">JFrame</span><span class="s2">.</span><span class="s1">EXIT_ON_CLOSE</span><span class="s2">);</span>
+        <span class="s1">setLayout</span><span class="s2">(</span><span class="s0">new </span><span class="s1">FlowLayout</span><span class="s2">());</span>
+
+        <span class="s1">add</span><span class="s2">(</span><span class="s0">new </span><span class="s1">JLabel</span><span class="s2">(</span><span class="s4">&quot;Cargo:&quot;</span><span class="s2">));</span>
+        <span class="s1">add</span><span class="s2">(</span><span class="s1">cargoField</span><span class="s2">);</span>
+        <span class="s1">add</span><span class="s2">(</span><span class="s1">buscarButton</span><span class="s2">);</span>
+        <span class="s1">add</span><span class="s2">(</span><span class="s0">new </span><span class="s1">JScrollPane</span><span class="s2">(</span><span class="s1">resultArea</span><span class="s2">));</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCargo</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s1">cargoField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">setResultado</span><span class="s2">(</span><span class="s1">String texto</span><span class="s2">) {</span>
+        <span class="s1">resultArea</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">texto</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public void </span><span class="s1">addBuscarListener</span><span class="s2">(</span><span class="s1">ActionListener listenForBuscarButton</span><span class="s2">) {</span>
+        <span class="s1">buscarButton</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s1">listenForBuscarButton</span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
