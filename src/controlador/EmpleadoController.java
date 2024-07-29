@@ -6,7 +6,7 @@ import modelo.EmpleadoDAO;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.List;
+import java.util.List;//
 
 public class EmpleadoController {
     private EmpleadoDAO empleadoDAO;
