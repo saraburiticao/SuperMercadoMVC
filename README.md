@@ -16,7 +16,13 @@ En esta guía, encontrarás instrucciones detalladas para comenzar a utilizar la
 
 Estructura del Proyecto
 
-//Base de Datos
+Paso 1. // Conexión a la base de datos
+Debe agregar a la librería de Intellij IDEA el archivo JAR que maneje en el equipo donde se esté visualizando el proyecto.
+Es decir, se debe actualizar esta ruta:
+<root url="jar://$USER_HOME$/Documents/DOCS personales/personal/Laboral MI PC/Especialización/mysql/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0.jar!/" />
+para esta versión se utilizó mysql-connector-j-9.0.0.jar
+
+Paso 2. //Correr la Base de Datos en mysql
 La base de datos creada en mysql es supermercado_db, con una tabla llamada empleados que contiene la siguiente información:
 
 * id: Identificador único del empleado.
@@ -39,7 +45,7 @@ La base de datos creada en mysql es supermercado_db, con una tabla llamada emple
 - Marketing y Promociones
 
 
-//Manejo del aplicativo
+Paso 3. //Manejo del aplicativo
 Funcionalidades
 * Campo de Entrada "Consultar Cargo": El usuario puede escribir el cargo en el campo de texto.
 * Botón "Buscar": Al hacer clic en el botón "Buscar", se ejecutará la acción para buscar empleados según el cargo ingresado.
