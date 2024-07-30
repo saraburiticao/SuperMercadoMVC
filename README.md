@@ -27,9 +27,9 @@ Paso 2. //Correr la Base de Datos en mysql
 
 - Descarga la base de datos creada en mysql -  supermercado_db; la tabla llamada empleados contiene la siguiente información:
 
-- ejecutar la siguiente consulta: 
-DROP DATABASE IF EXISTS supermercado_db;
-CREATE DATABASE supermercado_db;
+- ejecutar la siguiente consulta:
+//DROP DATABASE IF EXISTS supermercado_db;
+//CREATE DATABASE supermercado_db;
 USE supermercado_db;
 CREATE TABLE empleados (
 id INT AUTO_INCREMENT PRIMARY KEY,
