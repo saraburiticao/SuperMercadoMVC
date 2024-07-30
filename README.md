@@ -7,6 +7,7 @@
 * Sara C. Buriticá Olaya  
 * Camilo S. Cordoba Russi
 * Carlos R.  Díaz Quintero
+* Erika T. Tarapuez
 
 Guía de usuario SupermercadoMVC
 
@@ -46,6 +47,7 @@ INSERT INTO empleados (nombre, cargo) VALUES ('Camilo Cordoba', 'Gerente');
 INSERT INTO empleados (nombre, cargo) VALUES ('Carlos Díaz', 'Cajero');
 
 INSERT INTO empleados (nombre, cargo) VALUES ('Sara Buriticá', 'Administrador');
+
 INSERT INTO empleados (nombre, cargo) VALUES ('Ana Suarez', 'Cajero');
 
 INSERT INTO empleados (nombre, cargo) VALUES ('Juan Rincon', 'Almacenista');
