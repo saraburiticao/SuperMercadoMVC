@@ -20,8 +20,7 @@ Paso 1. // Conexión a la base de datos
 
 - Debe agregar a la librería de Intellij IDEA el archivo JAR que maneje en el equipo donde se esté visualizando el proyecto.
 - // para esta versión se utilizó mysql-connector-j-9.0.0.jar
-- Cada usuario debe actualizar la ruta del archivo JAR:
-<root url="jar://$USER_HOME$/Documents/DOCS personales/personal/Laboral MI PC/Especialización/mysql/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0.jar!/" />
+- Cada usuario debe actualizar la ruta del archivo JAR: <root url="jar://$USER_HOME$/Documents/DOCS personales/personal/Laboral MI PC/Especialización/mysql/mysql-connector-j-9.0.0/mysql-connector-j-9.0.0.jar!/" />
 
 Paso 2. //Correr la Base de Datos en mysql
 
